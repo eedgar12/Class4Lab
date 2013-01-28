@@ -7,8 +7,43 @@ and open the template in the editor.
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            function w3schools(){
+                
+            }
+        </script>
     </head>
     <body>
-       
+        <p id="msg">
+        <form action="displayMessage()">
+            <input type="text" name="msg"><br/>
+            <button type="submit" value="displayMessage()">Submit</button>
+        </form>
+            <script type="text/javascript">
+                function displayMessage(message){
+                    
+                    document.write(message);
+                }
+                displayMessage();
+                
+                function displayCars(){
+                    var cars = new Array;
+                    cars[0] = "Toyota";
+                    cars[1] = "Honda";
+                    cars[2] = "Kia";
+                    cars[3] = "Ford";
+                    cars[4] = "Volvo";
+                    
+                    for(var i=0;i<cars.length;i++){
+                        document.write(cars[i] + "<br/>");
+                        
+                    }
+                    
+                }
+            </script>
+
+            <button type="button" onclick="displayCars()">Click to display cars</button>
+
+        </p>
     </body>
 </html>
